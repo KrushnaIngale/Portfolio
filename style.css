@@ -1,0 +1,270 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fb;
+  color: #222;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  padding-bottom: 3rem;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #1a73e8;
+  color: white;
+  padding: 3rem 1rem 5rem;
+  text-align: center;
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  border-bottom-color: #feca57;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius:45%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.intro-text p {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0.3rem;
+}
+
+.intro h1 {
+  font-size: 2.9rem;
+  line-height: 1.1;
+  font-weight: 900;
+  margin: 0.1rem 0;
+}
+
+#hi{
+  color:rgb(74, 207, 152)
+}
+#lastname {
+  color: #feca57;
+}
+
+.intro p {
+  font-size: 1.25rem;
+  margin-top: 0.6rem;
+  font-weight: 600;
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  background: white;
+  margin: -6rem auto 3rem;
+  padding: 3rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+/* Sections styling */
+section {
+  margin-bottom: 4rem;
+}
+
+section h1, section h2 {
+  color: #1a73e8;
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  color: #555;
+  margin-top: -0.5rem;
+  margin-bottom: 1.3rem;
+  font-weight: 500;
+}
+
+section p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+section ul {
+  list-style-type: disc inside;
+  margin-left: 1rem;
+}
+
+section ul li {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+/* Skills List */
+.skills-list {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-list li {
+  background-color: #e3f0fd;
+  color: #1858ce;
+  padding: 0.45rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Work Section */
+#work h2 {
+  color: #444;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* Experience Section */
+#experience ul {
+  padding-left: 1rem;
+}
+
+/* Contact form */
+form {
+  background-color: #f5f8ff;
+  border-radius: 8px;
+  padding: 1.6rem 1.5rem;
+  max-width: 400px;
+  box-shadow: 0 1px 6px rgba(30,45,60,0.07);
+}
+
+form label {
+  font-weight: 600;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #bed5f3;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+form button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.8rem;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #145bad;
+}
+
+#contact p {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+}
+
+#contact a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #777;
+  padding: 1.8rem 1rem 3rem;
+  user-select: none;
+  letter-spacing: 0.03em;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  main {
+    margin: -3rem 1rem 2rem;
+    padding: 2rem 1.5rem;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding-bottom: 1rem;
+  }
+  
+  .intro h1 {
+    font-size: 2.4rem;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+}
